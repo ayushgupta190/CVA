@@ -1,0 +1,79 @@
+/* src/components/Chat.css */
+.chat-area {
+    flex-grow: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.chat-box {
+    background-color: #1a1a1a; /* Dark chat box */
+    padding: 20px;
+    border-radius: 10px;
+    height: calc(100% - 100px); /* Adjust height based on input area */
+    overflow-y: auto; /* Enable scrolling */
+    margin-bottom: 10px; /* Space between chat box and input */
+    position: relative; /* Position relative for absolute positioning of input */
+}
+
+.chat-input-container {
+    display: flex;
+    margin-top: 10px; /* Space between chat box and input */
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    flex-grow: 1; /* Allow the input area to take available space */
+}
+
+.switch {
+    margin-right: 10px; /* Space between mic and input field */
+}
+
+.chat-input {
+    flex-grow: 1;
+    background-color: #222; /* Dark background for input */
+    color: white; /* White text */
+    border: 1px solid #333; /* Border for input */
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px; /* Space between input and button */
+    resize: none; /* Prevents resizing */
+    overflow: auto; /* Enable scrolling for overflow */
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word; /* Break long words onto the next line */
+    max-height: 80px; /* Set a max height for the input */
+    box-sizing: border-box; /* Include padding and border in width/height calculations */
+}
+
+.send-btn {
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-message {
+    margin: 5px 0; /* Space between messages */
+    padding: 5px; /* Padding around messages */
+    border-radius: 5px; /* Rounded corners */
+    word-wrap: break-word; /* Break long words */
+    max-width: 80%; /* Limit message width for better readability */
+    clear: both; /* Clear previous floats */
+}
+
+/* Styles for user messages */
+.user-message {
+    background-color: #0084ff; /* User message background color */
+    color: white; /* User message text color */
+    margin-left: auto; /* Push user messages to the right */
+}
+
+/* Styles for bot messages */
+.bot-message {
+    background-color: #e0e0e0; /* Bot message background color */
+    color: #000; /* Bot message text color */
+    margin-right: auto; /* Push bot messages to the left */
+}

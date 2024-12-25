@@ -1,0 +1,21 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Keep the dashboard container full height */
+    background-color: #000; /* Keep the same background color */
+}
+
+.chat-area {
+    flex-grow: 1; /* Allow chat area to grow */
+    padding: 20px;
+    color: #fff; /* Keep text color white */
+    display: flex; /* Add flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.empty-chat {
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    height: 100%; /* Take full height */
+}

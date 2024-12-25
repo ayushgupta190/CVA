@@ -1,0 +1,61 @@
+/* src/components/HomePage.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Take full viewport height */
+  text-align: center; /* Center the text */
+}
+
+.home-header {
+  padding: 20px; /* Add some padding for better spacing */
+  margin-bottom: 20px; /* Adjust margin to control spacing above button */
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 1em;
+}
+
+p {
+  font-size: 1.2em;
+  color: #b0b0b0;
+  margin-bottom: 2em;
+}
+
+.buttons {
+  display: flex; /* Enable flexbox for the buttons */
+  justify-content: center; /* Center the buttons */
+  margin-top: 20px; /* Add margin to space the buttons below the text */
+}
+
+/* Consolidating button styles to avoid redundancy */
+.start-btn, .download-btn {
+  padding: 12px 24px;
+  font-size: 1.1em;
+  color: #000;
+  background-color: #fff; /* Match the background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover, .download-btn:hover {
+  background-color: #0088cc; /* Darker color on hover */
+}
